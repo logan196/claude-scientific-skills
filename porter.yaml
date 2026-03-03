@@ -1,0 +1,13 @@
+version: v2
+services:
+  - name: scientific-skills-mcp-web
+    type: web
+    run:
+      image:
+        repository: logan196/claude-scientific-skills
+      command: ""
+    port: 8100
+    cpus: 0.25
+    ramMegabytes: 256
+    health:
+      httpPath: /health
